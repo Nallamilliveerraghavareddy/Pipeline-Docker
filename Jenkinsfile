@@ -18,5 +18,25 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      parallel {
+        stage('Build') {
+          steps {
+            sleep 60
+          }
+        }
+
+        stage('test') {
+          steps {
+            timestamps() {
+              echo 'done'
+            }
+
+          }
+        }
+
+      }
+    }
+
   }
 }
