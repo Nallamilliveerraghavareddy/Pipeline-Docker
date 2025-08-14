@@ -1,5 +1,3 @@
-FROM nveerraghavareddy/jen123:latest
+FROM Ubuntu
 MAINTAINER nveerraghavareddy@gmail.com
-
-CMD service jenkins start
-ENTRYPOINT service jenkins restart && bash
+RUN apt update
