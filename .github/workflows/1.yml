@@ -1,1 +1,11 @@
-
+name: testing the actions
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    contents: read
+    pacakages: write
+    id-token: write
+  steps:
+    uses: actions/checkout@v4
+    run: echo "welcome to the new file"
