@@ -1,4 +1,4 @@
-write a code to build and publish docker image to ghcr.io
+##write a code to build and publish docker image to ghcr.io
 name: Publish Docker Image to GHCR      
 on:
   push:
