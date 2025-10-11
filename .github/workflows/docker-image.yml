@@ -28,5 +28,5 @@ jobs:
 
       - name: Push the Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.actor }}/my-image-name:latest
+          IMAGE_NAME=ghcr.io/my-image-name:latest
           docker push $IMAGE_NAME
