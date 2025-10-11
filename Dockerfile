@@ -1,5 +1,4 @@
 FROM ubuntu
 MAINTAINER nveerraghavareddy@gmail.com
-RUN apt update && apt upgrade -y
-RUN apt install ansible -y
+RUN apt update && apt install ansible -y && rm -rf /var/lib/apt/lists/*
 
