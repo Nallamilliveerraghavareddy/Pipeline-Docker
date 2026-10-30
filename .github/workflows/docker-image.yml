@@ -29,7 +29,7 @@ jobs:
 
       - name: Push the Docker image
         run: |
-          IMAGE_NAME=ghcr.io/nallamilliveerraghavareddy/my-image-name:latest
+          IMAGE_NAME=ghcr.io/nallamilliveerraghavareddy/ansible:latest
 
           docker push $IMAGE_NAME
 
