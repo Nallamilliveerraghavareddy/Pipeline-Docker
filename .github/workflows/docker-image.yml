@@ -23,7 +23,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          IMAGE_NAME=ghcr.io/nallamilliveerraghavareddy/my-image-name:latest
+          IMAGE_NAME=ghcr.io/nallamilliveerraghavareddy/Ansible:latest
 
           docker build . --file Dockerfile --tag $IMAGE_NAME
 
